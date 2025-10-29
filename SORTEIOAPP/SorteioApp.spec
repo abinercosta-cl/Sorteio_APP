@@ -1,14 +1,18 @@
 # -*- mode: python ; coding: utf-8 -*-
 
+# Importar bibliotecas para encontrar caminhos dinamicamente
 import os
 import customtkinter
 
-customtkinter_path = os.path.dirname(customtkinter.__file__)
+# Encontra o caminho da biblioteca customtkinter no Windows
+# O caminho é relativo ao venv
+customtkinter_path = os.path.join('venv', 'Lib', 'site-packages', 'customtkinter')
 
 a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
+    # Adiciona os arquivos de dados
     datas=[
         ('icone_sorteio.ico', '.'),
         ('sorteio.db', '.'),
@@ -37,7 +41,7 @@ exe = EXE(
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=False,
-    onedir=True,
+    console=False, # Importante para não abrir um terminal
+    onedir=True,   # Importante para criar uma pasta
     icon='icone_sorteio.ico'
 )
