@@ -36,9 +36,3 @@ funcionamento: - Radio 94-FM pela tarde(Onde passa os desafios para cada pessoa 
 
 Armazenamento que precisa ser local
 integração do banco de dados com atualização automatica
-
--- "mandar menagem pra amelia pra saber como funciona a dinamica da participação dos integrantes no sorteio"
-
-- Ouvir a radio 94 - FM
-
-- Estudar a precificação do projeto.
